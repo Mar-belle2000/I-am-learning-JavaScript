@@ -121,6 +121,19 @@ else {
     console.log('the value was less than 10')
 }
 
+
+let num1 = 6
+let num2 = 4
+let result = num1 > num2
+
+if(result){
+    console.log("num1 is greater")
+}
+
+else{
+console.log("num 2 is greater")
+console.log("Bye...")
+}
 //logical operators combines conditional statements
 
 
@@ -135,3 +148,5 @@ while (i < 20) {
     console.log('THE VALUE OF I = ', i)
     i = i + 1
 }
+
+
