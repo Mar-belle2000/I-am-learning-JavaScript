@@ -1,5 +1,4 @@
 console.log("Hello, World!")
-
 //variables are declared using "let" and "const"
 let numberOfEggs = 4 //let allows us to reassign a new value, const does not!
 numberOfEggs = 6
@@ -93,60 +92,71 @@ console.log(isCabbageDelicious)
 //SECTION 2 : LOGIC/OPERATIVE
 //Operators (+ - / %)
 const sum = 3 + 5
+const subtraction = 8 - 6
 const division = 12 / 5
 const remainder = 12 % 5
 const isEven = 12 % 2
 console.log('SUM: ', sum)
 console.log('isEven: ', isEven)
+console.log('subtraction: ', subtraction)
+console.log('remainder: ', remainder)
+console.log('division: ', division)
 
+
+const randomNumber = 900
+console.log(typeof randomNumber, typeof 'random string' )
 
 //conditional statements
 //if else
+
 const x = 6
 if (x > 10) {
-    //whatever code is written in here, is conditionally executed
+    // Whatever code is written in here, is conditionally executed
     console.log('The value was greater than 10')
-    console.log('The value was less than 10')
-}
-
-const y = 15
-if (y > 10) {
-    console.log('The value was greater than 10')
-    console.log('The value was less than 10')
-}
-
-//else
-else {
+} else {
     console.log('The value was not greater than 10')
-    console.log('the value was less than 10')
 }
 
 
-let num1 = 6
-let num2 = 4
-let result = num1 > num2
+const y = 11
+if (y > 10 && y < 20) {
+    // The ||(or) and &&(and) logical operator combines conditional statements
+    console.log('The value was greater than 10, and also less than 20')
 
-if(result){
-    console.log("num1 is greater")
+} else {
+    console.log('The value was not greater than 10, or it was greater than 20')
 }
 
-else{
-console.log("num 2 is greater")
-console.log("Bye...")
+const z = 21
+if (z > 10 || z < 20) {
+    // The ||(or) and &&(and) logical operator combines conditional statements
+    console.log('The value was greater than 10, or less than 20')
+
+} else {
+ 
+   console.log('The value was not greater than 10, or it was greater than 20')
 }
-//logical operators combines conditional statements
 
-
-//Type of is used to confirm the type of data type
-const randomNumber = 458
-console.log(typeof randomNumber, typeof 'random string')
-
-//loops makes work more effective and efficient, we have the while loop and for loop
-//while loop
+//Loops
+//While loop
 let i = 0
-while (i < 20) {
-    console.log('THE VALUE OF I = ', i)
+while (i < 10) {
+    console.log('THE VALUE OF I = ', 1)
     i = i + 1
 }
 
 
+//for loop
+
+for (let p = 0; p < 10; p = p + 1) {
+    console.log(p)
+}
+
+///example
+const animals = ['duck', 'dog', 'cat', 'piggy']
+console.log(animals)
+
+for (let j = 0; j < animals.length; j++) {
+    const stringToPrint = 'The animal at index: ' + j + 'And the value at that index is: ' + animals[j]
+    console.log(stringToPrint)
+}
