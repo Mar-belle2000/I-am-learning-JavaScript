@@ -152,11 +152,73 @@ for (let p = 0; p < 10; p = p + 1) {
     console.log(p)
 }
 
-///example
+//example
 const animals = ['duck', 'dog', 'cat', 'piggy']
 console.log(animals)
 
 for (let j = 0; j < animals.length; j++) {
+    const currentAnimal = animals[j]
+    if (currentAnimal == 'dog') {
+        continue
+    }
+
+    if (currentAnimal == 'cat') {
+        break
+    }
+
     const stringToPrint = 'The animal at index: ' + j + 'And the value at that index is: ' + animals[j]
     console.log(stringToPrint)
 }
+    
+
+// Functions
+// Create a function
+function printSquare() {
+    console.log(4*4)
+}
+printSquare()
+
+function PrintCube() {
+    console.log(2*2*2)
+}
+PrintCube()
+
+function printFunction(y) {
+    console.log(y*y)
+}
+printFunction(4)
+
+function multiplyFunction(x, y) {
+    console.log(x*y)
+}
+multiplyFunction(8, 10)
+
+
+function divideFunction(x, y) {
+    console.log(x/y)
+}
+divideFunction(10, 2)
+
+//Return
+function addstrings(s1, s2) {
+    const concatString = s1 + s2
+    console.log(concatString)
+    let notEqualString = 'NO'
+    console.log(notEqualString)
+
+    if (typeof s1 !== 'string' || typeof s2 !== 'string') {
+        return notEqualString
+    }
+    return concatString
+}
+
+const newString = addstrings('Hello', ' World')
+addstrings('Hello', ' Marybelle')
+console.log('NEWSTRING: ', newString)
+
+//Arrow function syntax
+const arrowFunction = (arg) => {
+    console.log('ARG: ', arg)
+}
+
+arrowFunction('Hellow')
